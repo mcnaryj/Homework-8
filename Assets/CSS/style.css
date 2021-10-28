@@ -5,15 +5,13 @@
     margin: 0;
 }
 
-/* header {
-
-} */
 
 h1 {
     justify-content: flex-start;
     font-size: 48px;
     margin-left: 20px;
     margin-right: 200px;
+    margin-bottom: 10px;
 }
 
 header nav {
@@ -22,7 +20,7 @@ header nav {
     flex: 1 0 200px;
     flex-direction: row;
     justify-content: flex-end;
-    background-color:seagreen;
+    background-color:rgb(21, 31, 26);
     color: #ffffff;
     white-space: normal;
 }
@@ -39,10 +37,11 @@ nav li {
 }
 
 
-a {
+nav a {
     color: white;
     text-decoration: underline;
 }
+
 
 #about-me {
     display: inline-flex;
@@ -55,7 +54,7 @@ a {
 }
 
 #banner {
-    height: 100px;
+    height: 150px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/banner.jpeg");
@@ -77,6 +76,14 @@ p {
     font-size: 16px;
 }
 
+.work header {
+    background-color: rgb(21, 20, 20);  
+    color: blanchedalmond;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 100px;
+    align-content: center;
+}
 .mardock {
     border-right: solid 3px black;
     padding-right: 50px;
@@ -89,7 +96,7 @@ p {
     border-right: solid 3px black;
     padding-right: 50px;
     float: left;
-    margin-left: 20px;
+    margin-left: 31px;
     margin-top: 10px;
     height: 30em;
 
@@ -99,7 +106,6 @@ p {
     background: url('../images/Marvellisms.png');
     width: 45em;
     height: 450px;
-    /* width: 50vh; */
     border: solid 5px black;
     border-spacing: 10px;
     margin-left: 25%;
