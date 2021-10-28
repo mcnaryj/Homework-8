@@ -5,15 +5,9 @@
     margin: 0;
 }
 
-header {
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    background-color: #233946;
-    color: #ffffff;
-    white-space: normal;
-}
+/* header {
+
+} */
 
 h1 {
     justify-content: flex-start;
@@ -28,7 +22,7 @@ header nav {
     flex: 1 0 200px;
     flex-direction: row;
     justify-content: flex-end;
-    background-color: #233946;
+    background-color:seagreen;
     color: #ffffff;
     white-space: normal;
 }
@@ -46,19 +40,18 @@ nav li {
 
 
 a {
-    color: #ffffff;
+    color: white;
     text-decoration: underline;
 }
 
 #about-me {
     display: inline-flex;
     flex-direction: row;
-    border-right: 3px solid #fff;
     padding-right: 50px;
-    height: 200px;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    height: 150px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: white;
-    color: #black;
+    color: #000;
 }
 
 #banner {
@@ -92,130 +85,65 @@ p {
 
 }
 
+.mardock2 {
+    border-right: solid 3px black;
+    padding-right: 50px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 30em;
 
-.main {
-    display: inline-flexbox;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 2%;
-  }
-
-.work {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    border-color: black;
-    margin: 10px;
-    margin-bottom: 20px;
-    padding: 10px;
-    position: relative;
-    color: #ffffff;
 }
 
-.break {
-    flex-basis: 100%;
-    height: 0;
-  }
-.card1 {
-    display: block;
-    flex-direction: column;
-    padding: 300px;
+.marvellisms {
     background: url('../images/Marvellisms.png');
-    background-size: cover;
-    text-align: center;
-    border: solid 5px black;
-    border-style: solid;
-
-}
-
-.card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 200px;
-    background: url('../images/WorkDay_Scheduler.png');
-    background-size: cover;
-    position: relative;
+    width: 45em;
+    height: 450px;
+    /* width: 50vh; */
     border: solid 5px black;
     border-spacing: 10px;
-    margin-left: 50px;
-}
-
-.card2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 200px;
-    background: url('../images/Multi_Choice_quiz.png');
-    background-size: cover;
-    position: relative;
-    border: solid 5px black;
-    border-spacing: 10px;
-    margin-left: 50px;
-}
-
-.card3 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 200px;
-    background: url('../images/Weather_Planner.png');
-    background-size: cover;
-    position: relative;
-    border: solid 5px black;
-    border-spacing: 10px;
-    margin-left: 50px;
-}
-
-.card4 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 200px;
-    background: url('../images/Password_Generator.png');
-    background-size: cover;
-    position: relative;
-    border: solid 5px black;
-    border-spacing: 10px;
-    margin-left: 50px;
-}
-
-
-.card header {
-    display: inline;
-    position: absolute;
-    left: 0px;
-    bottom: 8px;
-    padding: 20px;
-    background: #13293d;
-    color: #fff;
-
-}
-
-/* .card header {
-    display: flex;
-    text-align: left;
-    position: absolute;
-    bottom: 8px;
-    height: 80px;
-    width: 40%;
-    padding: 20px;
-    font-size: 14px;
-    color: white;
-    background: black
+    margin-left: 25%;
+    background-size: contain;
     background-repeat: no-repeat;
-} */
-
-.card:hover, .card1:hover {
-    font-size: 200%;
-    box-shadow: 0 0 10px #000 inset;
+    margin-bottom: 10px;
 
 }
 
-.card:active, .card1:active {
-    box-shadow: 0 0 50px #000 inset;
+.day-planner {
+    background: url('../images/WorkDay_Scheduler.png');
+}
 
+.quiz
+ {
+    background: url('../images/Multi_Choice_quiz.png');
+}
+
+.forecast {
+    background: url('../images/Weather_Planner.png');
+}
+
+.password-generator {
+    background: url('../images/Password_Generator.png');
+}
+
+.day-planner, .quiz, .forecast, .password-generator {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width:  25em;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    border: solid 5px black;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    object-fit: cover;
+
+}
+
+.marvellisms:hover, .day-planner:hover, .quiz:hover, .forecast, .password-generator:hover {
+    font-size: 100%;
+    box-shadow: 0 0 10px #000 inset;
 }
 
 #contact-me {   
@@ -227,8 +155,8 @@ p {
     margin-top: 20px;
     margin-bottom: 50px;
     padding: 15px;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    height: 70%;
+    font-family: 'Times New Roman', 'Trebuchet MS', sans-serif;
     color:black;
     border-right-color: black;
 }
