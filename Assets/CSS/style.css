@@ -5,6 +5,7 @@
     margin: 0;
 }
 
+/* As a general note, I mostly refactored what was in the previous portfolio, and I found that there was a ton of redundant code which could be taken out without an effect on the appearance of the page. */
 
 h1 {
     justify-content: flex-start;
@@ -76,16 +77,18 @@ p {
     font-size: 16px;
 }
 
-.work header {
+/* added a box to the header inside each card */
+.work header, .marvellisms header {
     background-color: rgb(21, 20, 20);  
     color: blanchedalmond;
     box-sizing: border-box;
     padding: 10px;
     margin: 100px;
-    align-content: center;
+    justify-content: center;
 }
 
-.mardock {
+/* used to get the about me section to float to the left.*/
+.about {
     border-right: solid 3px black;
     padding-right: 50px;
     float: left;
@@ -93,7 +96,9 @@ p {
 
 }
 
-.mardock2 {
+
+
+.flexbox {
     border-right: solid 3px black;
     padding-right: 50px;
     float: left;
@@ -119,6 +124,7 @@ p {
 
 
 }
+
 
 .day-planner {
     background: url('../images/WorkDay_Scheduler.png');
@@ -157,21 +163,23 @@ p {
     box-shadow: 0 0 10px #000 inset;
 }
 
-#contact-me {   
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    height: 70%;
-    font-family: 'Times New Roman', 'Trebuchet MS', sans-serif;
-    color:black;
-    border-right-color: black;
+/* split the randomly named class "mardock" into a more coherent about/contact me sections. In doing so, I was able to get it to line up with the rest of the content */
+.contact {
+    border-right: solid 3px black;
+    flex: auto;
+    float: left;
+    margin-left: 20px;
+    padding-right: 27px;
+
 }
 
 #contact-me li, #contact-me a {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    float: left;
+    padding: 20px;
+    margin-left: 20px;
     list-style-type: none;
     font-size: 18px;
     text-align: right;
@@ -186,7 +194,7 @@ p {
 
 
   
-  /* Large smartphones - navbar changes color */
+/* added a couple media queries to make the screen display better on smaller screens. */
   @media screen and (max-width: 768px) {
     .day-planner, .quiz, .forecast, .password-generator, .marvellisms {
         flex: .5 0 200;
