@@ -84,6 +84,7 @@ p {
     margin: 100px;
     align-content: center;
 }
+
 .mardock {
     border-right: solid 3px black;
     padding-right: 50px;
@@ -112,6 +113,10 @@ p {
     background-size: contain;
     background-repeat: no-repeat;
     margin-bottom: 10px;
+    background-color: rgb(21, 20, 20);  
+    color: blanchedalmond;
+    box-sizing: border-box;
+
 
 }
 
@@ -183,8 +188,22 @@ p {
   
   /* Large smartphones - navbar changes color */
   @media screen and (max-width: 768px) {
-    *, .work {
-        flex-wrap: wrap;
+    .day-planner, .quiz, .forecast, .password-generator, .marvellisms {
+        flex: .5 0 200;
+        width:  50vh;
+        height: 50vh;
+        
     }
   }
   
+  @media screen and (max-width: 768px) {
+    .marvellisms  {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #about-me, p {
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+}
