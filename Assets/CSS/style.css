@@ -83,8 +83,9 @@ p {
     color: blanchedalmond;
     box-sizing: border-box;
     padding: 10px;
-    margin: 100px;
+
     justify-content: center;
+    text-align: center;
 }
 
 /* used to get the about me section to float to the left.*/
@@ -158,7 +159,7 @@ p {
 
 }
 
-.marvellisms:hover, .day-planner:hover, .quiz:hover, .forecast, .password-generator:hover {
+.marvellisms:hover, .day-planner:hover, .quiz:hover, .forecast:hover, .password-generator:hover {
     font-size: 100%;
     box-shadow: 0 0 10px #000 inset;
 }
@@ -210,7 +211,7 @@ p {
     }
 }
 @media screen and (max-width: 768px) {
-    #about-me, p {
+    #about-me, p, .contact, #contact-me li, #contact-me a {
         margin-bottom: 20px;
         font-size: 12px;
     }
