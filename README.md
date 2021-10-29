@@ -40,8 +40,8 @@ Download the files contained in the Homework-8 repository, either through Github
 
 ## Mock-Up
 
-The below animation demonstrates the appearance and functionality of the day planner:
- ![A user can click each activity or link, all of which lead to their desired targets.](./Assets/Images/05-third-party-apis-homework-demo.gif)
+The below animation demonstrates the appearance and functionality of the portfolio:
+ ![A user can click each activity or link, all of which lead to their desired targets.](./Assets/images/Homework-8-demo.gif)
 
 ## Notes
 
